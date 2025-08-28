@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 3rem;
+  margin: 10px;
+}
+header img {
+  min-height: 30px;
+  min-width: 80px;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+header nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  white-space: nowrap;
+}
+header nav ul li:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0.75rem 1rem;
+    gap: 20px;
+  }
+  header nav ul {
+    gap: 1rem;
+    padding-left: 20px;
+  }
+  header nav ul li a {
+    font-size: 16px;
+  }
+}
+.bannerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(./banner.svg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./banner.svg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  max-width: 1300px;
+  margin: 0 auto;
+  min-height: clamp(110px, 25vw, 230px);
+}
+.bannerContainer p {
+  color: white;
+  font-weight: 700;
+  font-size: clamp(20px, 5vw, 48px);
+  line-height: 1.2;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  text-align: center;
+}
+.bannerContainer .mobile-break {
+  display: none;
+}
+@media (max-width: 767px) {
+  .bannerContainer {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 5%;
+  }
+  .bannerContainer p {
+    text-align: left;
+  }
+  .bannerContainer .mobile-break {
+    display: inline;
+  }
+  .bannerContainer .mobile-break::after {
+    content: "\a";
+    white-space: pre;
+  }
+}/*# sourceMappingURL=main.css.map */

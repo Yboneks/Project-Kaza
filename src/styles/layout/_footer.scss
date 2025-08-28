@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    height: 209px;
+    width: 100%;
+    gap: 20px;
+    p{
+        color: white;
+        font-weight: 500;
+        font-size: clamp(14px, 2vw, 24px);
+    }
+}
+
+@media (max-width: 767px) {
+    footer {
+        p {
+        width: 130px;
+        }    
+    }
+}

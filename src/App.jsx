@@ -1,8 +1,9 @@
-import { useState } from 'react'
-import './styles/App.scss'
+import { useEffect, useState } from 'react'
+import './styles/main.scss'
+import {Router} from './router/Router'
 
-function App() {
-  return 
+
+
+export function App() {
+  return <Router/>
 }
-
-export default App

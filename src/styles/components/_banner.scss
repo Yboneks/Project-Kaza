@@ -1,0 +1,46 @@
+.bannerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.6)
+  ),
+  url(./banner.svg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  max-width: 90vw;
+  margin: 0 auto;
+  min-height: clamp(110px, 25vw, 230px);
+
+  p {
+    color: white;
+    font-weight: 700;
+    font-size: clamp(20px, 5vw, 48px);
+    line-height: 1.2;
+    text-shadow: 4px 4px 0px #00000040;
+    text-align: center;
+  }
+
+  .mobile-break {
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+    justify-content: flex-start;
+    padding-left: 5%;
+
+    p {
+      text-align: left;
+    }
+
+    .mobile-break {
+      display: inline;
+      &::after {
+        content: "\A";
+        white-space: pre;
+      }
+    }
+  }
+}
