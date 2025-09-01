@@ -1,10 +1,5 @@
-// Abstract
-@import 'abstract/variables';
-@import 'abstract/mixins';
-
 // Base
 @import 'base/base';
-@import 'base/reset';
 @import 'base/typo';
 
 // Layout
@@ -14,7 +9,6 @@
 // Components
 @import 'components/carousel';
 @import 'components/rating';
-@import 'components/tag';
 @import 'components/collapse';
 @import 'components/banner';
 @import 'components/card';
@@ -22,7 +16,5 @@
 
 
 // Pages
-@import 'pages/home';
-@import 'pages/about';
 @import 'pages/logement';
 @import 'pages/erreur';
