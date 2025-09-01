@@ -5,7 +5,10 @@ import {Card} from '../component/Card'
 export function Home() {
 
     return <>
-    <Banner/>
+    <Banner
+        image="src/assets/img/home-banner.svg"
+        text={<>Chez vous,<span className='mobile-break'></span> partout et ailleurs</>}
+    />
     <Card/>
     </>
 }

@@ -1,0 +1,64 @@
+.collapseList{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 0;
+    .collapse {
+        border-radius: 10px;
+        background: #ff6060;
+        margin: 0 auto;
+        overflow: hidden;
+        width: 80%;
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 15px;
+            font-weight: bold;
+            font-size: clamp(13px, 1.5vw, 24px);
+            color: white;
+        }
+
+        &__icon {
+            transition: transform 0.3s ease;
+
+            &.open {
+            transform: rotate(180deg);
+            }
+        }
+
+        ul, li {
+            list-style: none;
+        }
+        &__content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 15px;
+            color: white;
+            &.open {
+            max-height: 300px;
+            padding: 15px;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .collapse {
+            width: 90%;
+        }
+    }
+}
+
+// Pour page logement
+
+.collapseListLogement {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}

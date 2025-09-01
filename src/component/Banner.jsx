@@ -1,11 +1,13 @@
 
-
-export function Banner() {
+export function Banner({ image, text }) {
   return (
     <div className="bannerContainer">
-      <p>
-        Chez vous,<span className="mobile-break">{' '}</span> partout et ailleurs
-      </p>
+      <img src={image} alt="bannière" className="bannerImage" />
+      {text && (
+        <p className="bannerText">
+          {text}
+        </p>
+      )}
     </div>
   );
 }

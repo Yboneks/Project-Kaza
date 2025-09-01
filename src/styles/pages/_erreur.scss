@@ -1,0 +1,28 @@
+.erreur-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 7rem;
+    margin: 120px 50px;
+    text-align: center;
+    h1 {
+        color: #ff6060;
+        font-weight: 700;
+        font-size: clamp(96px, 10vw, 288px);
+    }
+    p {
+        color: #ff6060;
+        font-weight: 500;
+        font-size: clamp(18px, 2.5vw, 36px);
+    }
+    a {
+        color: black;
+        font-size: clamp(14px, 2vw, 20px);
+        &:hover {
+            color: red;
+        }
+    }
+
+    
+}
