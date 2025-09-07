@@ -2,7 +2,6 @@
 export function Rating({ rating }) {
   const totalStars = 5;
   const ratingValue = parseInt(rating, 10);
-  console.log(ratingValue);
   return (
     <div className="rating">
       {[...Array(totalStars)].map((_, i) =>
