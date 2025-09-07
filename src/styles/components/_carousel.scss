@@ -32,15 +32,21 @@
 
     i {
       color: #fff;
-      font-size: 2rem;
+      font-size: 3rem;
     }
 
     &.prev {
       left: 20px;
+      background: transparent;
+      border: none;
+      border-radius: 0;
     }
 
     &.next {
       right: 20px;
+      background: transparent;
+      border: none;
+      border-radius: 0;
     }
 
     @media (max-width: 768px) {
