@@ -1,20 +1,20 @@
 // Base
-@import 'base/base';
-@import 'base/typo';
+@use 'base/base';
+@use 'base/typo';
 
 // Layout
-@import 'layout/header';
-@import 'layout/footer';
+@use 'layout/header';
+@use 'layout/footer';
 
 // Components
-@import 'components/carousel';
-@import 'components/rating';
-@import 'components/collapse';
-@import 'components/banner';
-@import 'components/card';
-@import 'components/gallery';
+@use 'components/carousel';
+@use 'components/rating';
+@use 'components/collapse';
+@use 'components/banner';
+@use 'components/card';
+@use 'components/gallery';
 
 
 // Pages
-@import 'pages/logement';
-@import 'pages/erreur';
+@use 'pages/logement';
+@use 'pages/erreur';

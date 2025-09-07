@@ -55,8 +55,9 @@
 
 .collapseListLogement {
     display: flex;
-    gap: 30px;
     flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
 
     @media (max-width: 768px) {
         flex-direction: column;
