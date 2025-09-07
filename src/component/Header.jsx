@@ -7,7 +7,7 @@ export function Header () {
         <img src={Logo} alt="Image du logo de l'entreprise Kaza" />
         <nav>
             <ul>
-                <li><Link to="/">Acceuil</Link></li>
+                <li><Link to="/">Accueil</Link></li>
                 <li><Link to="/a-propos">A propos</Link></li>
             </ul>
         </nav>
